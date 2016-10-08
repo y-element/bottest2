@@ -20,7 +20,7 @@ router.post('/webhook/', function (req, res) {
     const event = req.body.entry[0].messaging[i];
     if (event.message && event.message.text) {
       const text = event.message.text;
-      console.log(text)
+      console.log(text+"2")
       sendTextMessage(sender, "Text received, echo: " + text);
     }
   }
